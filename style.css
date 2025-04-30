@@ -1,0 +1,71 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Animaciones */
+@keyframes scale-normal {
+    to {
+        scale: 1;
+    }
+}
+@keyframes scale-up {
+    to {
+        scale: 1.7;
+    }
+}
+
+@keyframes fade-away {
+    to {
+        opacity: 0;
+    }
+}
+.animationScaleup{
+    animation: 
+    scale-up 1s both ease-in-out;
+}
+.animationScalenNormal{
+    animation: 
+    scale-normal 1s both ease-in-out;
+  }
+section{
+    min-height: 100vh;
+    display: grid;
+    position: relative;
+    place-items: center;
+}
+.infoExp{
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+.infoExp:hover {
+    background-color: rgb(0, 95, 190); /* Cambio de color */
+    transform: scale(1.2); /* Aumento de tamaño */
+    flex-grow: 5;
+  }
+#inicio {
+    view-timeline: --scroll;
+    view-timeline-axis: block;
+}
+#experiencia{
+    display: block;
+}
+#inicio>div {
+    position: sticky;
+    top: 50%;
+}
+
+/* Animaciones */
+#nombre {
+    animation:
+        scale-up both ease-in-out,
+        fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range:
+        exit 0% exit 60%,
+        exit 0% exit 60%;
+}
+
+#apellidos {
+    animation: fade-away both linear;
+    animation-timeline: --scroll;
+    animation-range: exit 0% exit 60%;
+}

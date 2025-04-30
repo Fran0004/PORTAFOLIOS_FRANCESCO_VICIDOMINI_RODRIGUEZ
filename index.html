@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página OnePage</title>
+    <!-- Tailwind CSS vía CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+
+<body class="font-sans text-gray-800">
+
+    <!-- Navbar -->
+    <!-- <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <nav class="container mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">Mi Sitio</h1>
+      <ul class="flex space-x-4">
+        <li><a href="#inicio" class="hover:text-blue-600">Inicio</a></li>
+        <li><a href="#servicios" class="hover:text-blue-600">Servicios</a></li>
+        <li><a href="#contacto" class="hover:text-blue-600">Contacto</a></li>
+      </ul>
+    </nav>
+  </header> -->
+
+    <!-- Secciones -->
+    <main>
+        <!-- Inicio -->
+        <section id="inicio" class="bg-blue-100">
+            <div class="text-center">
+                <h2 id="nombre" class="text-7xl font-bold mb-4">FRANCESCO</h2>
+                <p id="apellidos" class="text-2xl">VICIDOMINI RODRIGUEZ</p>
+            </div>
+        </section>
+        <section id="experiencia" class="pt-8 bg-blue-100">
+            <div class="text-center m-4">
+                
+                <h2 class="text-3xl font-semibold">MI EXPERIENCIA</h2>
+            </div>
+            <div class="item-start flex p-4 shadow-md rounded-b-lg" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                <div id="divExperiencia" class="flex">
+                    <div class="infoExp flex m-2 items-center justify-center rounded-xl bg-sky-500/100 size-14">01</div>
+                    <div class="infoExp flex m-2 items-center justify-center rounded-xl bg-sky-500/100 size-14">02</div>
+                    <div class="infoExp flex m-2 items-center justify-center rounded-xl bg-sky-500/100 size-14 ">03</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="bg-yellow-100">
+            <div class="text-center">
+                <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+                <p>Escríbenos para más información.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+        <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="main.js"></script>
+</html>
