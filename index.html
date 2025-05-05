@@ -2,19 +2,19 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Página OnePage</title>
-    <!-- Tailwind CSS vía CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página OnePage</title>
+  <!-- Tailwind CSS vía CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
 </head>
 
-<body class="font-sans text-gray-800">
+<body class="font-sans">
 
-    <!-- Navbar -->
-    <!-- <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
+  <!-- Navbar -->
+  <!-- <header class="fixed top-0 left-0 w-full bg-white shadow z-50">
     <nav class="container mx-auto flex justify-between items-center p-4">
       <h1 class="text-xl font-bold">Mi Sitio</h1>
       <ul class="flex space-x-4">
@@ -25,43 +25,124 @@
     </nav>
   </header> -->
 
-    <!-- Secciones -->
-    <main>
-        <!-- Inicio -->
-        <section id="inicio" class="bg-blue-100">
-            <div class="text-center">
-                <h2 id="nombre" class="text-7xl font-bold mb-4">FRANCESCO</h2>
-                <p id="apellidos" class="text-2xl">VICIDOMINI RODRIGUEZ</p>
+  <!-- Secciones -->
+  <main>
+    <!-- Inicio -->
+    <section id="inicio" class="">
+      <div class="text-center">
+        <h2 id="nombre" class="text-7xl font-bold mb-4">FRANCESCO</h2>
+        <p id="apellidos" class="text-2xl">VICIDOMINI RODRIGUEZ</p>
+      </div>
+    </section>
+    <section id="secProyectos" class="pt-8 ">
+      <div class="text-center m-4 mb-10">
+        <h2 class="text-3xl font-semibold">PROYECTOS</h2>
+      </div>
+      <div class="flex justify-center items-center p-4 w-full" data-aos="fade-up"
+        data-aos-anchor-placement="top-bottom">
+        <a href="https://roguelab.itch.io/fragmented-memory">
+          <div class="card">
+            <div class="wrapper">
+              <img src="/assets/img/BannerfRAGMENTmEMORY.png" class="cover-image" />
             </div>
-        </section>
-        <section id="experiencia" class="pt-8 bg-blue-100">
-            <div class="text-center m-4">
-                
-                <h2 class="text-3xl font-semibold">MI EXPERIENCIA</h2>
+            <p class="title"> click to go</p>
+            <img src="/assets/img/Escena_espejo_v2-removebg-preview.png" class="character" />
+          </div>
+        </a>
+        <a href="https://francescovr.itch.io/globrush">
+          <div class="card">
+            <div class="wrapper">
+              <img src="/assets/img/BannerfRAGMENTmEMORY.png" class="cover-image" />
             </div>
-            <div class="item-start flex p-4 shadow-md rounded-b-lg" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
-                <div id="divExperiencia" class="flex">
-                    <div class="infoExp flex m-2 items-center justify-center rounded-xl bg-sky-500/100 size-14">01</div>
-                    <div class="infoExp flex m-2 items-center justify-center rounded-xl bg-sky-500/100 size-14">02</div>
-                    <div class="infoExp flex m-2 items-center justify-center rounded-xl bg-sky-500/100 size-14 ">03</div>
-                </div>
-            </div>
-        </section>
+            <p class="title"> click to go</p>
+            <img src="/assets/img/Escena_espejo_v2-removebg-preview.png" class="character" />
+          </div>
+        </a>
+      </div>
+    </section>
+    <section id="experiencia" class=" grid grid-cols-2">
+      <div style="padding: 2rem; max-width: 800px;">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Experiencia Profesional</h1>
+    
+        <div class="expCard">
+          <h2>Operario de Producción – Argal Alimentación</h2>
+          <p class="date">Veranos 2022 y 2023 · Miralcamp, Lleida</p>
+          <ul>
+            <li>Trabajo en línea de producción en la sección de secaderos.</li>
+            <li>Control de calidad y seguimiento de procesos industriales.</li>
+            <li>Entorno de trabajo exigente y ritmo elevado.</li>
+          </ul>
+        </div>
+    
+        <div class="expCard">
+          <h2>Técnico Informático y Atención al Cliente – Mayo Informática</h2>
+          <p class="date">Prácticas (3 meses) + Verano 2021 · Mollerussa, Lleida</p>
+          <ul>
+            <li>Diagnóstico y reparación de hardware y software.</li>
+            <li>Venta y asesoramiento al cliente en tienda física.</li>
+            <li>Montaje y configuración de PCs a medida.</li>
+          </ul>
+        </div>
+    
+        <div class="expCard">
+          <h2>Programador Full Stack – Nubbagroup</h2>
+          <p class="date">Prácticas (2024) · Lleida</p>
+          <ul>
+            <li>Desarrollo web frontend (React, HTML/CSS) y backend (Node.js, MongoDB).</li>
+            <li>Trabajo en equipo con metodologías ágiles (Scrum).</li>
+            <li>Gestión de proyectos con Git, Jira y APIs RESTful.</li>
+          </ul>
+        </div>
+      </div>
+      <div style="padding: 2rem; max-width: 800px;">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Formación Académica</h1>
+    
+        <div class="expCard">
+          <h2>Curso de Especialización en Desarrollo de Videojuegos</h2>
+          <p class="date">2024 · [Centro educativo] – [Ciudad]</p>
+          <ul>
+            <li>Desarrollo de videojuegos en Unity y otros motores.</li>
+            <li>Diseño, scripting, arte y publicación de videojuegos.</li>
+            <li>Trabajo en equipo, jams y proyectos reales del sector.</li>
+          </ul>
+        </div>
+    
+        <div class="expCard">
+          <h2>Grado Superior en Desarrollo de Aplicaciones Multiplataforma (DAM)</h2>
+          <p class="date">2022 - 2024 · [Centro educativo] – [Ciudad]</p>
+          <ul>
+            <li>Programación de aplicaciones móviles, de escritorio y web.</li>
+            <li>Uso de bases de datos, control de versiones, diseño UI.</li>
+            <li>Prácticas como programador full stack en empresa.</li>
+          </ul>
+        </div>
+    
+        <div class="expCard">
+          <h2>Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h2>
+          <p class="date">2020 - 2022 · [Centro educativo] – [Ciudad]</p>
+          <ul>
+            <li>Instalación, configuración y mantenimiento de sistemas.</li>
+            <li>Montaje de ordenadores, redes locales y soporte técnico.</li>
+            <li>Prácticas en tienda informática como técnico y vendedor.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="contacto">
+      <div class="text-center">
+        <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
+        <p>Escríbenos para más información.</p>
+      </div>
+    </section>
+  </main>
 
-        <section id="contacto" class="bg-yellow-100">
-            <div class="text-center">
-                <h2 class="text-3xl font-semibold mb-4">Contacto</h2>
-                <p>Escríbenos para más información.</p>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-gray-800 text-white text-center p-4">
-        <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
-    </footer>
+  <!-- Footer -->
+  <footer id="finalShin" class="text-white text-center p-4">
+    <p>&copy; 2025 Mi Sitio. Todos los derechos reservados.</p>
+  </footer>
 
 </body>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="main.js"></script>
+
 </html>
