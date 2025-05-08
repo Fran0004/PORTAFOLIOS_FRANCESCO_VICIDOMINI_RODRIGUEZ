@@ -1,3 +1,4 @@
+@import "tailwindcss";
 html {
     scroll-behavior: smooth;
     color: antiquewhite;
@@ -190,13 +191,13 @@ section{
   .card:hover .wrapper::after {
     height: 120px;
   }
-  .title {
+  .linkProyect {
     width: 100%;
     color: antiquewhite;
     opacity: 0;
     transition: transform 0.5s;
   }
-  .card:hover .title {
+  .card:hover .linkProyect {
     opacity: 1;
     transform: translate3d(0%, -50px, 100px);
   }
@@ -226,14 +227,16 @@ section{
   border-radius: 12px;
   transition: filter 0.3s ease;
 }
-
-.expCard {
+.ContactSect{
+ padding: 2rem !important;
+}
+.expCard, .ContactSect{
   background-color: rgba(255, 255, 255, 0.05);
-  border-left: 4px solid rgb(147, 70, 172);
+  border-left: 2px solid rgba(47, 44, 144, 0.249);
   padding: 1rem 1.5rem;
   margin-bottom: 2rem;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.9s ease;
 }
 
 .expCard:hover {
